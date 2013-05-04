@@ -13,8 +13,13 @@ npm install -g https://github.com/kaosf/kas-proxy/tarball/v0.0.1
 Usage.
 
 ```
+echo '{"listen": 10000, "dest": 9000}' > config.json
 kas-proxy
 ```
+
+## References
+
+* [nodejitsu/node-http-proxy](https://github.com/nodejitsu/node-http-proxy)
 
 ## License
 
