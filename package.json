@@ -1,0 +1,19 @@
+{
+  "name": "kas-proxy",
+  "version": "0.0.0",
+  "description": "Very easy and simple proxy server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaosf/kas-proxy"
+  },
+  "keywords": [
+    "http",
+    "proxy"
+  ],
+  "author": "ka",
+  "license": "MIT"
+}
