@@ -1,6 +1,6 @@
 {
   "name": "kas-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Very easy and simple proxy server.",
   "main": "index.js",
   "dependencies": {
