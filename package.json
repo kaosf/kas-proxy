@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Very easy and simple proxy server.",
   "main": "index.js",
+  "directories": {
+    "bin": "./bin"
+  },
   "scripts": {
     "test": "grunt test"
   },
