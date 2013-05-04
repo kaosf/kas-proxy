@@ -1,5 +1,5 @@
 module.exports = {
-  method: function() {
-    console.log('kas-proxy');
+  startProxyServer: function() {
+    console.log('Proxy server is started...');
   }
 };
