@@ -13,6 +13,9 @@ module.exports = {
     this.config = JSON.parse(fs.readFileSync(this.configPath));
     return console.log(this.config);
   },
+  setConfig: function(config) {
+    return this.config = config;
+  },
   startProxyServer: function() {
     var _this = this;
 

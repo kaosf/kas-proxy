@@ -8,6 +8,10 @@ module.exports =
       process.exit()
     @config = JSON.parse fs.readFileSync(@configPath)
     console.log @config
+
+  setConfig: (config) ->
+    @config = config
+
   startProxyServer: ->
     httpProxy.createServer((req, res, proxy) =>
       proxy.proxyRequest req, res,
