@@ -1,26 +1,27 @@
-var config, configPath, fs, httpProxy;
+var fs, httpProxy;
 
 httpProxy = require('http-proxy');
 
 fs = require('fs');
 
-configPath = "" + process.env.PWD + "/config.json";
-
-if (!fs.existsSync(configPath)) {
-  console.log("config.json doesn't exist.");
-  process.exit();
-}
-
-config = JSON.parse(fs.readFileSync(configPath));
-
 module.exports = {
+  loadConfig: function() {
+    this.configPath = "" + process.env.PWD + "/config.json";
+    if (!fs.existsSync(this.configPath)) {
+      process.exit();
+    }
+    this.config = JSON.parse(fs.readFileSync(this.configPath));
+    return console.log(this.config);
+  },
   startProxyServer: function() {
+    var _this = this;
+
     httpProxy.createServer(function(req, res, proxy) {
       return proxy.proxyRequest(req, res, {
         host: 'localhost',
-        port: config.dest
+        port: _this.config.dest
       });
-    }).listen(config.listen);
-    return console.log("Starting Server at http://localhost:" + config.listen);
+    }).listen(this.config.listen);
+    return console.log("Starting Server at http://localhost:" + this.config.listen);
   }
 };
