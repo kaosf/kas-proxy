@@ -64,6 +64,7 @@ kas-proxy
 
 ## References
 
+* [サーバサイドJavaScript Node.js入門](http://www.amazon.co.jp/dp/4048703676) (Amazon)
 * [nodejitsu/node-http-proxy](https://github.com/nodejitsu/node-http-proxy)
 
 ## License
