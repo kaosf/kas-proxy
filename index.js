@@ -14,17 +14,18 @@ module.exports = {
     return console.log(this.config);
   },
   setConfig: function(config) {
-    return this.config = config;
+    this.config = config;
+    return this.config.host = this.config.host || 'localhost';
   },
   startProxyServer: function() {
     var _this = this;
 
     httpProxy.createServer(function(req, res, proxy) {
       return proxy.proxyRequest(req, res, {
-        host: 'localhost',
+        host: _this.config.host,
         port: _this.config.dest
       });
     }).listen(this.config.listen);
-    return console.log("Starting Server at http://localhost:" + this.config.listen);
+    return console.log("Starting Server at http://" + this.config.host + ":" + this.config.listen);
   }
 };

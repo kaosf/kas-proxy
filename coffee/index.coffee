@@ -11,11 +11,12 @@ module.exports =
 
   setConfig: (config) ->
     @config = config
+    @config.host = @config.host || 'localhost'
 
   startProxyServer: ->
     httpProxy.createServer((req, res, proxy) =>
       proxy.proxyRequest req, res,
-        host: 'localhost'
+        host: @config.host
         port: @config.dest
     ).listen @config.listen
-    console.log "Starting Server at http://localhost:#{@config.listen}"
+    console.log "Starting Server at http://#{@config.host}:#{@config.listen}"
