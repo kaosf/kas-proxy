@@ -10,7 +10,7 @@ module.exports = {
     if (!fs.existsSync(this.configPath)) {
       process.exit();
     }
-    this.config = JSON.parse(fs.readFileSync(this.configPath));
+    this.setConfig(JSON.parse(fs.readFileSync(this.configPath)));
     return console.log(this.config);
   },
   setConfig: function(config) {

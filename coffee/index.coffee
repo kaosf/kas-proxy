@@ -6,7 +6,7 @@ module.exports =
     @configPath = "#{process.env.PWD}/config.json"
     unless fs.existsSync @configPath
       process.exit()
-    @config = JSON.parse fs.readFileSync(@configPath)
+    @setConfig(JSON.parse fs.readFileSync(@configPath))
     console.log @config
 
   setConfig: (config) ->
