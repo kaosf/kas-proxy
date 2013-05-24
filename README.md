@@ -33,7 +33,7 @@ nodebrew install v0.8.19
 nodebrew use v0.8.19
 
 # install Grunt.
-npm install -g grunt-cli@0.1.7
+npm install -g grunt-cli@0.1.8
 
 # install some packages for development.
 npm install
