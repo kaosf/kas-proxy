@@ -27,10 +27,10 @@ Clone the repository, and then install development tools. Do this process at onl
 git clone https://github.com/kaosf/kas-proxy
 cd kas-proxy
 
-# install Node.js v0.8.19.
+# install Node.js v0.10.0.
 # for example;
-nodebrew install v0.8.19
-nodebrew use v0.8.19
+nodebrew install v0.10.0
+nodebrew use v0.10.0
 
 # install Grunt.
 npm install -g grunt-cli@0.1.8
