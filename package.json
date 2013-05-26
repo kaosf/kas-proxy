@@ -4,13 +4,13 @@
   "description": "Very easy and simple proxy server.",
   "main": "index.js",
   "dependencies": {
-    "http-proxy": "0.10.2"
+    "http-proxy": "*"
   },
   "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-contrib-coffee": "0.7.0",
-    "grunt-simple-mocha": "0.4.0",
-    "grunt-contrib-clean": "0.4.1"
+    "grunt": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-simple-mocha": "*",
+    "grunt-contrib-clean": "*"
   },
   "directories": {
     "bin": "./bin"

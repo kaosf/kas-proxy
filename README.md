@@ -1,4 +1,4 @@
-# Ka's Proxy
+# Ka's Proxy [![Build Status](https://travis-ci.org/kaosf/kas-proxy.png)](https://travis-ci.org/kaosf/kas-proxy)
 
 Very easy and simple proxy server.
 
@@ -27,13 +27,13 @@ Clone the repository, and then install development tools. Do this process at onl
 git clone https://github.com/kaosf/kas-proxy
 cd kas-proxy
 
-# install Node.js v0.10.0.
+# install Node.js v0.10.x or 0.8.x.
 # for example;
-nodebrew install v0.10.0
-nodebrew use v0.10.0
+nodebrew install-binary v0.10 # or v0.8
+nodebrew use v0.10 # or v0.8
 
 # install Grunt.
-npm install -g grunt-cli@0.1.8
+npm install -g grunt-cli
 
 # install some packages for development.
 npm install
@@ -66,6 +66,7 @@ kas-proxy
 
 * [サーバサイドJavaScript Node.js入門](http://www.amazon.co.jp/dp/4048703676) (Amazon)
 * [nodejitsu/node-http-proxy](https://github.com/nodejitsu/node-http-proxy)
+* [Using travis-ci with grunt 0.4.x | Matt Goldspink](http://www.mattgoldspink.co.uk/2013/02/10/using-travis-ci-with-grunt-0-4-x/)
 
 ## License
 
