@@ -66,6 +66,7 @@ kas-proxy
 
 * [サーバサイドJavaScript Node.js入門](http://www.amazon.co.jp/dp/4048703676) (Amazon)
 * [nodejitsu/node-http-proxy](https://github.com/nodejitsu/node-http-proxy)
+* [Using travis-ci with grunt 0.4.x | Matt Goldspink](http://www.mattgoldspink.co.uk/2013/02/10/using-travis-ci-with-grunt-0-4-x/)
 
 ## License
 
