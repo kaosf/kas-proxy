@@ -1,4 +1,4 @@
-# Ka's Proxy
+# Ka's Proxy [![Build Status](https://travis-ci.org/kaosf/kas-proxy.png)](https://travis-ci.org/kaosf/kas-proxy)
 
 Very easy and simple proxy server.
 
