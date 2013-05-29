@@ -1,9 +1,22 @@
+argv = require 'argv'
 httpProxy = require 'http-proxy'
 fs = require 'fs'
 
+args = argv.option(
+  [
+    {
+      name: 'config'
+      short: 'c'
+      type: 'path'
+      description: 'config file path'
+      example: "'kas-proxy -c path/to/config.json'. default: ./config.json"
+    }
+  ]
+).run()
+
 module.exports =
   loadConfig: () ->
-    @configPath = "#{process.env.PWD}/config.json"
+    @configPath = args.options.config || "#{process.env.PWD}/config.json"
     unless fs.existsSync @configPath
       process.exit()
     @setConfig(JSON.parse fs.readFileSync(@configPath))

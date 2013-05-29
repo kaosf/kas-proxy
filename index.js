@@ -1,12 +1,24 @@
-var fs, httpProxy;
+var args, argv, fs, httpProxy;
+
+argv = require('argv');
 
 httpProxy = require('http-proxy');
 
 fs = require('fs');
 
+args = argv.option([
+  {
+    name: 'config',
+    short: 'c',
+    type: 'path',
+    description: 'config file path',
+    example: "'kas-proxy -c path/to/config.json'. default: ./config.json"
+  }
+]).run();
+
 module.exports = {
   loadConfig: function() {
-    this.configPath = "" + process.env.PWD + "/config.json";
+    this.configPath = args.options.config || ("" + process.env.PWD + "/config.json");
     if (!fs.existsSync(this.configPath)) {
       process.exit();
     }
