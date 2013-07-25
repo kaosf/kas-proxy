@@ -31,7 +31,6 @@ module.exports = {
   },
   startProxyServer: function() {
     var _this = this;
-
     httpProxy.createServer(function(req, res, proxy) {
       return proxy.proxyRequest(req, res, {
         host: _this.config.host,
