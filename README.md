@@ -7,7 +7,7 @@ Very easy and simple proxy server.
 Installation.
 
 ```sh
-npm install -g https://github.com/kaosf/kas-proxy/tarball/v0.0.3
+npm install -g https://github.com/kaosf/kas-proxy/tarball/v0.0.4
 ```
 
 Usage.
