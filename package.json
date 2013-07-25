@@ -4,8 +4,8 @@
   "description": "Very easy and simple proxy server.",
   "main": "index.js",
   "dependencies": {
-    "argv": "*",
-    "http-proxy": "*"
+    "argv": "~0.0.2",
+    "http-proxy": "~0.10.3"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
